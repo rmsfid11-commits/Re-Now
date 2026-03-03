@@ -9,7 +9,8 @@ export default function TabsLayout({
   return (
     <>
       <Starfield />
-      <main className="relative z-10 min-h-screen pb-20 px-4 pt-6 max-w-lg mx-auto">
+      <div className="pointer-events-none fixed inset-0 z-[1] bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.07),rgba(0,0,0,0))]" />
+      <main className="relative z-10 mx-auto max-w-md px-4 pb-24 pt-4 min-h-screen">
         {children}
       </main>
       <TabBar />
